@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Will Cowley – Engineering Portfolio</title>
+<meta name="description" content="Will Cowley: aspiring aerospace and mechanical engineer. Machines designed in Fusion 360 and built in steel, plus industry experience at Safran and Moog.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <a class="mark" href="#top">W. Cowley</a>
+  <nav aria-label="Sections">
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <h1>Will<br>Cowley</h1>
+      <p class="lede">Aspiring aerospace and mechanical engineer. I design machines in Fusion&nbsp;360, then weld, machine and wire them myself.</p>
+      <p class="hero-meta">A-levels: Design Technology A*, Physics A*, Maths A, Chemistry B. Arkwright Engineering Scholar. Summer 2026 engineering placement at Safran.</p>
+    </div>
+
+    <figure class="sheet">
+      <img src="images/cnc-mill-fusion360.jpg" width="1100" height="1038"
+           alt="Fusion 360 model of Will's metal-cutting CNC mill: a fixed steel bridge carrying the spindle on linear rails, a moving table driven by a ballscrew, mounted on a welded steel bench.">
+      <table class="title-block" aria-label="Drawing details">
+        <tr><th scope="row">Project</th><td colspan="3">Metal-cutting CNC mill</td></tr>
+        <tr><th scope="row">Designed</th><td>W. Cowley</td><th scope="row">Software</th><td>Fusion 360</td></tr>
+        <tr><th scope="row">Frame</th><td>Welded steel</td><th scope="row">Status</th><td>Build in progress</td></tr>
+      </table>
+    </figure>
+  </section>
+
+  <section class="block" id="projects" aria-labelledby="projects-h">
+    <h2 id="projects-h">Projects</h2>
+    <p class="intro">Things I have designed and built, most recent first.</p>
+
+    <article class="project feature">
+      <div class="project-body">
+        <h3>Metal-cutting CNC mill</h3>
+        <p class="when">2026 to 2027, in progress</p>
+        <p>My first CNC router could cut wood well but flexed too much for metal, and adhesive workholding failed on metal parts. So I designed a second machine from scratch in Fusion 360, aimed at stiffness.</p>
+        <p>It uses a fixed steel bridge with a moving table, profile linear rails and ballscrews. The box-section columns will be filled with a sand and oil mix to damp vibration. The bench and machine frame are welded and built; next I fit the ballscrews and install the electronics.</p>
+      </div>
+      <dl class="spec">
+        <div><dt>Role</dt><dd>Design, fabrication, wiring</dd></div>
+        <div><dt>Tools</dt><dd>Fusion 360, MIG and TIG welding, lathe, mill</dd></div>
+        <div><dt>Budget</dt><dd>£1,000 to £2,000, self-funded</dd></div>
+      </dl>
+    </article>
+
+    <article class="project">
+      <div class="project-body">
+        <h3>Man-overboard recovery aid</h3>
+        <p class="when">A-level Design Technology, grade A*</p>
+        <p>A rescue aid for small yachts. A halyard lifts a bespoke semi-buoyant triangle that the casualty is clipped into and rolled up the side of the boat. I tested it on the water on a family yacht, where it is now in use.</p>
+      </div>
+      <dl class="spec">
+        <div><dt>Tested</dt><dd>On the water, on a working yacht</dd></div>
+        <div><dt>Links to</dt><dd>My sailing and instructing</dd></div>
+      </dl>
+    </article>
+
+    <article class="project">
+      <div class="project-body">
+        <h3>Worcester Royal Hospital ICU virtual tour</h3>
+        <p class="when">Two-year project, Bronze Duke of Edinburgh volunteering</p>
+        <p>A photorealistic, interactive 3D tour of the intensive care unit, built in Blender to help patients, families and new staff know what to expect. I modelled and textured around 30 pieces of medical equipment. The tour is still live on the Worcester ICU website.</p>
+      </div>
+      <dl class="spec">
+        <div><dt>Software</dt><dd>Blender</dd></div>
+        <div><dt>Users</dt><dd>Patients, carers and staff</dd></div>
+      </dl>
+    </article>
+
+    <article class="project">
+      <div class="project-body">
+        <h3>First CNC router</h3>
+        <p class="when">Funded by my Arkwright Scholarship</p>
+        <p>Built from an online design, covering mechanical assembly, electronics and machine setup. I used it to make wooden wallets and engraved house signs. Its limits on metal shaped every decision on my second machine.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-body">
+        <h3>Automatic face mask</h3>
+        <p class="when">Fusion 360, 3D printing, Arduino</p>
+        <p>A 3D-printed mask that opens and closes at the press of a button, driven by a servo. It was how I learned Arduino wiring and code.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-body">
+        <h3>Water-level sensor</h3>
+        <p class="when">Microcontroller, Python</p>
+        <p>An ultrasonic sensor reads the water level in our coffee machine and shows it on a small OLED screen, with warnings for empty and overfilled.</p>
+      </div>
+    </article>
+
+    <div class="smaller">
+      <h3>Smaller builds</h3>
+      <ul>
+        <li><strong>3D-printed RC tank</strong> with printed and tested gearboxes, built on old RC car internals.</li>
+        <li><strong>DT lamp</strong> combining wood turning, a 3D-printed generative housing and a WiFi RGB LED ring.</li>
+        <li><strong>Smart mirror</strong>: a Raspberry Pi and old monitor behind one-way film, showing time and weather.</li>
+        <li><strong>Remote 3D printing</strong> with OctoPrint on a Raspberry Pi.</li>
+        <li><strong>Printed moulds and models</strong>: a two-part mould for a cardboard-pulp boat, a Globe Theatre model, a battery case, a trumpet mute and a Ring doorbell cover.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="experience" aria-labelledby="experience-h">
+    <h2 id="experience-h">Industry experience</h2>
+    <ol class="timeline">
+      <li>
+        <p class="when">Summer 2026</p>
+        <h3>Safran Actuation Systems, Wolverhampton</h3>
+        <p>Three-month paid engineering placement. I ran hands-on tests to validate position-sensor options for defence actuation systems, assessing accuracy and alignment. I also researched rare-earth-free magnets, comparing their magnetic performance and how reliably they can be sourced.</p>
+      </li>
+      <li>
+        <p class="when">May 2025</p>
+        <h3>Constellium University Technology Centre, Brunel University London</h3>
+        <p>Visited the aluminium research centre, sat in on a board meeting and saw demonstrations of alloy testing and development systems.</p>
+      </li>
+      <li>
+        <p class="when">Sixth form</p>
+        <h3>Moog, Wolverhampton</h3>
+        <p>Two weeks with the design, manufacturing and quality teams, plus meetings with senior managers about the challenges the business faces.</p>
+      </li>
+      <li>
+        <p class="when">Sixth form</p>
+        <h3>Collins Aerospace / Safran, Banbury and Wolverhampton</h3>
+        <p>Work experience across departments on civil and defence programmes, alongside regular meetings with my Arkwright industry mentor.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="block" id="skills" aria-labelledby="skills-h">
+    <h2 id="skills-h">Skills</h2>
+    <div class="skills">
+      <div>
+        <h3>Design</h3>
+        <p>Fusion 360 (six years, including CFD), SolidWorks, Onshape, SketchUp. Blender for rendering and animation.</p>
+      </div>
+      <div>
+        <h3>Making</h3>
+        <p>MIG and TIG welding, lathe and milling machine, soldering, CNC machine building, 3D printing (five years), wood turning.</p>
+      </div>
+      <div>
+        <h3>Electronics and code</h3>
+        <p>Arduino, Raspberry Pi, ESP8266, Python (basic).</p>
+      </div>
+    </div>
+
+    <h3 class="sub">Education and awards</h3>
+    <ul class="plain">
+      <li><strong>A-levels, RGS Worcester (2026):</strong> Design Technology A*, Physics A*, Mathematics A, Chemistry B.</li>
+      <li><strong>GCSEs, Solihull School:</strong> eight grade 9s including Maths, Physics, Chemistry and Design Technology.</li>
+      <li><strong>Arkwright Engineering Scholarship</strong>, sponsored by Safran.</li>
+      <li><strong>Duke of Edinburgh Bronze Award.</strong></li>
+      <li><strong>Assistant sailing instructor</strong>, Draycote Water Sailing Club (2023 to 2024), and <strong>CCF, RAF section</strong>.</li>
+    </ul>
+  </section>
+
+  <section class="block contact" id="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">Contact</h2>
+    <p>I'm applying for aerospace and mechanical engineering degree apprenticeships starting in 2027.</p>
+    <p><a class="email" href="mailto:William.giles.cowley@gmail.com">William.giles.cowley@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <p>Will Cowley, Birmingham. Updated October 2026.</p>
+</footer>
+</body>
+</html>
