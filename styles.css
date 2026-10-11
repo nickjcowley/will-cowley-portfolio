@@ -148,3 +148,15 @@ p { max-width: var(--measure); }
   main, .site-head, .site-foot { padding-left: 1rem; padding-right: 1rem; }
   .title-block th { width: auto; }
 }
+
+/* Project images */
+.side { display: grid; gap: 1rem; align-self: start; }
+.shot { margin: 0; }
+.shot img { display: block; width: 100%; height: auto; background: var(--sheet); border: 1px solid var(--rule); }
+.shot figcaption { font-size: .85rem; color: var(--steel); margin-top: .4rem; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: start; }
+.project > .shot, .project > .pair { align-self: start; }
+.gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin: 1.25rem 0 1.75rem; }
+.gallery .shot img { aspect-ratio: 4 / 3; object-fit: cover; }
+@media (max-width: 52rem) { .gallery { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 30rem) { .pair { grid-template-columns: 1fr; } }
