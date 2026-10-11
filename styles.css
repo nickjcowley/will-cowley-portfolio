@@ -73,7 +73,7 @@ p { max-width: var(--measure); }
 
 /* Projects */
 .project {
-  display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 3rem;
+  display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: 3rem;
   padding: 2.25rem 0; border-top: 1px solid var(--rule);
 }
 .project:first-of-type { border-top: 0; padding-top: 0; }
@@ -106,15 +106,14 @@ p { max-width: var(--measure); }
 .smaller { padding-top: 2.25rem; border-top: 1px solid var(--rule); }
 .smaller ul { margin: .75rem 0 0; padding-left: 1.1rem; max-width: 44rem; }
 .smaller li { margin-bottom: .5rem; }
-.gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin: 1.25rem 0 1.75rem; }
-.gallery .shot img { aspect-ratio: 4 / 3; object-fit: cover; }
+.gallery { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .75rem; margin: 1.25rem 0 1.75rem; }
+.gallery .shot img { aspect-ratio: 1 / 1; object-fit: cover; }
+.gallery .shot figcaption { font-size: .75rem; line-height: 1.35; }
 
-.build { display: grid; grid-template-columns: 1fr 1.6fr; grid-template-rows: auto auto; gap: 1rem; margin-top: 1.5rem; }
-.build .tall { grid-row: span 2; }
-.build .tall img { height: 100%; object-fit: cover; }
-.build .shot img { width: 100%; }
+.build { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin-top: 1.25rem; max-width: var(--measure); }
+.build .shot img { width: 100%; height: 130px; object-fit: cover; }
 
-.cta { display: inline-block; margin-top: .25rem; padding: .55rem .9rem; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 500; font-size: .95rem; }
+.cta { display: inline-block; margin-top: .25rem; padding: .5rem .85rem; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 500; font-size: .92rem; }
 .cta:hover { background: var(--accent); color: var(--bg); }
 
 /* Experience timeline */
@@ -147,7 +146,7 @@ strong { font-weight: 600; }
   .skills { grid-template-columns: 1fr; gap: 1.5rem; }
   .timeline li { grid-template-columns: 1fr; }
   .timeline .when { grid-row: auto; margin-bottom: .35rem; }
-  .gallery { grid-template-columns: 1fr 1fr; }
+  .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 30rem) {
   main, .site-head, .site-foot { padding-left: 1rem; padding-right: 1rem; }
@@ -155,7 +154,5 @@ strong { font-weight: 600; }
   .facts { grid-template-columns: 1fr; }
   .facts div, .facts div + div { padding-left: 0; border-left: 0; padding-bottom: .75rem; border-bottom: 1px solid var(--rule); }
   .pair { grid-template-columns: 1fr; }
-  .build { grid-template-columns: 1fr; }
-  .build .tall { grid-row: auto; }
   .title-block th { width: auto; }
 }
