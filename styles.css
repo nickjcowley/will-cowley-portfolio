@@ -110,8 +110,9 @@ p { max-width: var(--measure); }
 .gallery .shot img { aspect-ratio: 1 / 1; object-fit: cover; }
 .gallery .shot figcaption { font-size: .75rem; line-height: 1.35; }
 
-.build { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin-top: 1.25rem; max-width: var(--measure); }
+.build { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin-top: 1.25rem; max-width: var(--measure); }
 .build .shot img { width: 100%; height: 130px; object-fit: cover; }
+.build .wide { grid-column: span 2; }
 
 .cta { display: inline-block; margin-top: .25rem; padding: .5rem .85rem; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 500; font-size: .92rem; }
 .cta:hover { background: var(--accent); color: var(--bg); }
