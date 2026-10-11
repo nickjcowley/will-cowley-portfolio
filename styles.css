@@ -114,6 +114,9 @@ p { max-width: var(--measure); }
 .build .tall img { height: 100%; object-fit: cover; }
 .build .shot img { width: 100%; }
 
+.cta { display: inline-block; margin-top: .25rem; padding: .55rem .9rem; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 500; font-size: .95rem; }
+.cta:hover { background: var(--accent); color: var(--bg); }
+
 /* Experience timeline */
 .timeline { list-style: none; margin: 2rem 0 0; padding: 0; }
 .timeline li { display: grid; grid-template-columns: 9rem minmax(0, 1fr); column-gap: 2rem; padding: 1.5rem 0; border-top: 1px solid var(--rule); }
