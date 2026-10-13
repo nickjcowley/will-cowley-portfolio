@@ -5,6 +5,7 @@ Static website (HTML + CSS, no build step) published with GitHub Pages.
 - `index.html` – page content
 - `styles.css` – styling
 - `images/` – photos and renders (add new ones here and reference them from `index.html`)
+- `videos/` – web-compressed clips from the old Wix site, each with a `.jpg` poster frame (full-quality originals are kept offline)
 
 ## Moving to Will's own GitHub account
 Settings → General → Danger Zone → Transfer ownership → enter Will's username.
