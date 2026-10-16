@@ -86,6 +86,8 @@ p { max-width: var(--measure); }
   align-items: start; margin-bottom: 1.25rem;
 }
 .lead { margin: 0; }
+@media (min-width: 62.01rem) { .feature .project-head { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); } }
+.lead-pair { gap: .75rem; }
 .lead.tall { justify-self: end; width: min(100%, 13rem); }
 .project-body .more-btn { margin-top: .5rem; }
 
@@ -254,3 +256,8 @@ strong { font-weight: 600; }
   .title-block th { width: auto; }
   .intro-text p { font-size: 1.1rem; }
 }
+
+/* CNC: model and real frame side by side */
+.lead-pair .title-block { font-size: .8rem; }
+.lead-pair .title-block th, .lead-pair .title-block td { padding: .35rem .5rem; }
+.lead-pair .title-block th { width: auto; }
