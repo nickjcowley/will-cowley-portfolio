@@ -104,6 +104,7 @@
           <h3>Man-overboard recovery system</h3>
           <p class="when">A-level Design Technology project, 2025 to 2026, grade A*</p>
           <p>Most yacht safety kit only works if the person in the water can help themselves. My client, an experienced skipper with a 31&nbsp;ft yacht in Cardiff Bay, wanted a way to recover someone who is unconscious or exhausted. I designed, made and sea-tested a two-part system.</p>
+          <p class="ctas"><a class="cta" href="docs/will-cowley-dt-a-level-project.pdf" target="_blank" rel="noopener">Read the full project (PDF, 42 pages)</a></p>
           <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-mob">More photos and detail <span class="count">(10)</span></button>
           <div class="more more-side"><div class="more-inner">
           <div class="more-text-inner">
@@ -412,6 +413,7 @@
 
 <footer class="site-foot">
   <p>Will Cowley, Birmingham. Updated October 2026.</p>
+  <p class="ai-note">This website was made with the help of AI.</p>
 </footer>
 
 <dialog class="lightbox" aria-label="Enlarged picture">
@@ -465,6 +467,7 @@
     }
     function cancel() { clearTimeout(timer); timer = null; p.classList.remove('arming'); }
     p._cancel = cancel;
+    p._set = set;
     btn.addEventListener('click', function () { cancel(); set(!p.classList.contains('open')); });
     if (!canHover) return;
     p.style.setProperty('--hover-wait', WAIT + 'ms');
@@ -475,6 +478,28 @@
     });
     p.addEventListener('mouseleave', cancel);
   });
+
+  // Hide the extra detail again once the project has scrolled out of view.
+  // It closes instantly, and if the project is above the screen the page is
+  // shifted back by the same amount, so what the reader is looking at stays put.
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        var p = en.target;
+        if (en.isIntersecting || !p.classList.contains('open') || document.fullscreenElement) return;
+        var above = en.boundingClientRect.bottom <= 0;
+        var before = p.offsetHeight, y0 = window.scrollY;
+        p.classList.add('no-anim');
+        p._set(false);
+        var after = p.offsetHeight;
+        // Some browsers keep the view steady by themselves; only correct if this one didn't.
+        var want = y0 - (before - after);
+        if (above && before > after && Math.abs(window.scrollY - want) > 1) window.scrollTo({ top: want, behavior: 'instant' });
+        requestAnimationFrame(function () { p.classList.remove('no-anim'); });
+      });
+    });
+    projects.forEach(function (p) { if (p._set) io.observe(p); });
+  }
   window.addEventListener('scroll', function () {
     scrolling = true;
     projects.forEach(function (p) { if (p._cancel) p._cancel(); });

@@ -120,6 +120,7 @@ p { max-width: var(--measure); }
 .more-text-inner .spec { margin-top: 1.25rem; }
 .more-text-inner .spec div { grid-template-columns: 6rem 1fr; padding: .5rem 0; }
 @media (prefers-reduced-motion: reduce) { .more { transition: none; } }
+.project.no-anim .more { transition: none; }
 .more-text { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 1rem 4rem; margin-bottom: 1.75rem; }
 .more-text p { margin: 0 0 1rem; }
 .more-text:only-child { margin-bottom: 0; }
@@ -210,6 +211,7 @@ figcaption strong { color: var(--ink); font-weight: 500; }
 
 .site-foot { max-width: var(--wide); margin: 0 auto; padding: 2rem 1.5rem 3rem; color: var(--steel); font-size: .95rem; border-top: 1px solid var(--rule-strong); }
 .site-foot p { margin: 0; }
+.site-foot .ai-note { margin-top: .4rem; font-size: .8rem; opacity: .7; }
 
 strong { font-weight: 600; }
 
