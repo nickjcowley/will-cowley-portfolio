@@ -43,139 +43,252 @@
 
   <section class="block" id="projects" aria-labelledby="projects-h">
     <h2 id="projects-h">Projects</h2>
-    <p class="intro">Things I have designed and built, most recent first. Click any picture to see it full size.</p>
+    <p class="intro">Things I have designed and built. <span class="hint-hover">Rest the pointer on a project for a moment to see more photos and detail, or use its button.</span><span class="hint-touch">Tap a project's button to see more photos and detail.</span> Click any picture to see it full size.</p>
 
-    <article class="project feature">
+    <article class="project feature" id="cnc-mill">
       <div class="project-head">
         <div class="project-body">
           <h3>Metal-cutting CNC mill</h3>
           <p class="when">2026 to 2027, in progress</p>
-          <p>My first CNC router could cut wood well but flexed too much for metal, and adhesive workholding failed on metal parts. So I designed a second machine from scratch in Fusion 360, aimed at stiffness.</p>
-          <p>It uses a fixed steel bridge with a moving table, profile linear rails and ballscrews. The box-section columns will be filled with a sand and oil mix to damp vibration. The bench and machine frame are welded and built; next I fit the ballscrews and install the electronics.</p>
+          <p>My first CNC router could cut wood well but flexed too much for metal. So I designed a second machine from scratch in Fusion 360, aimed at stiffness: a fixed steel bridge with a moving table, profile linear rails and ballscrews.</p>
+          <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-cnc">More photos and detail <span class="count">(13)</span></button>
         </div>
-        <dl class="spec">
-          <div><dt>Role</dt><dd>Design, fabrication, wiring</dd></div>
-          <div><dt>Tools</dt><dd>Fusion 360, plasma cutter, MIG and TIG welding, lathe, mill, taps and dies</dd></div>
-          <div><dt>Funding</dt><dd>Arkwright Scholarship and paid work experience at Safran</dd></div>
-        </dl>
+        <figure class="sheet lead">
+          <img src="images/cnc-mill-fusion360.jpg" width="1100" height="1038"
+               alt="Fusion 360 model of Will's metal-cutting CNC mill: a fixed steel bridge carrying the spindle on linear rails, a moving table driven by a ballscrew, mounted on a welded steel bench.">
+          <table class="title-block" aria-label="Drawing details">
+            <tr><th scope="row">Project</th><td colspan="3">Metal-cutting CNC mill</td></tr>
+            <tr><th scope="row">Designed</th><td>W. Cowley</td><th scope="row">Software</th><td>Fusion 360</td></tr>
+            <tr><th scope="row">Frame</th><td>Welded steel</td><th scope="row">Status</th><td>Build in progress</td></tr>
+          </table>
+        </figure>
       </div>
-      <div class="media">
-        <div class="row" style="--cols: .95fr .5625fr">
-          <figure class="sheet">
-            <img src="images/cnc-mill-fusion360.jpg" width="1100" height="1038" class="zoom"
-                 alt="Fusion 360 model of Will's metal-cutting CNC mill: a fixed steel bridge carrying the spindle on linear rails, a moving table driven by a ballscrew, mounted on a welded steel bench.">
-            <table class="title-block" aria-label="Drawing details">
-              <tr><th scope="row">Project</th><td colspan="3">Metal-cutting CNC mill</td></tr>
-              <tr><th scope="row">Designed</th><td>W. Cowley</td><th scope="row">Software</th><td>Fusion 360</td></tr>
-              <tr><th scope="row">Frame</th><td>Welded steel</td><th scope="row">Status</th><td>Build in progress</td></tr>
-            </table>
-          </figure>
-          <figure class="shot fill"><img src="images/cnc-plasma-cutting.jpg" width="675" height="1200" loading="lazy" alt="Will plasma cutting steel for the CNC frame in a home workshop, wearing a face shield and leather apron."><figcaption>Plasma cutting steel for the frame.</figcaption></figure>
+      <div class="more" id="more-cnc"><div class="more-inner">
+        <div class="more-text">
+          <div>
+            <p>I chose welded steel box section, left over from building work, for the frame. The columns will be filled with a sand and oil mix to damp vibration. I considered a cast-concrete frame and epoxy granite, but rejected them as impractical and expensive when the steel is already rigid.</p>
+            <p>The bench and frame are welded, the columns and bridge are primed, and the rails and ballscrews are being fitted. The electronics come next, and I aim to finish the machine during my gap year.</p>
+          </div>
+          <dl class="spec">
+            <div><dt>Drives</dt><dd>Closed-loop NEMA 34 steppers; SFU2005 ballscrews on X and Y, SFU1605 on Z</dd></div>
+            <div><dt>Spindle</dt><dd>2.2 kW, air-cooled</dd></div>
+            <div><dt>Tools</dt><dd>Fusion 360, plasma cutter, MIG and TIG welding, lathe, mill, taps and dies</dd></div>
+            <div><dt>Funding</dt><dd>Arkwright Scholarship and paid work at Safran</dd></div>
+          </dl>
         </div>
-        <div class="row" style="--cols: 1.778fr 2.685fr">
-          <figure class="shot"><img src="images/cnc-frame-parts.jpg" width="1200" height="675" loading="lazy" alt="Steel box-section rails, columns and a carriage plate laid out on the workbench with measuring tools."><figcaption>Frame parts laid out before assembly.</figcaption></figure>
-          <figure class="shot"><img src="images/cnc-tapping-wide.jpg" width="1200" height="447" loading="lazy" alt="Gloved hands turning a tap wrench to cut a thread in a steel plate, with welded box-section columns for the CNC machine behind."><figcaption>Tapping a thread in a mounting plate.</figcaption></figure>
+        <div class="thumbs">
+          <figure class="clip wide"><video src="videos/cnc-welding-frame.mp4" poster="videos/cnc-welding-frame.jpg" width="1280" height="720" controls muted playsinline preload="none" aria-label="Video of Will welding the clamped steel frame of the CNC mill."></video><figcaption>Welding the frame, October 2026.</figcaption></figure>
+          <figure class="shot"><img src="images/cnc-plasma-cutting.jpg" width="675" height="1200" loading="lazy" alt="Will plasma cutting steel for the CNC frame, wearing a face shield and leather apron."><figcaption>Plasma cutting steel for the frame.</figcaption></figure>
+          <figure class="shot"><img src="images/cnc-steel-cut.jpg" width="1400" height="1054" loading="lazy" alt="Lengths of steel box section and a plate laid out on a driveway."><figcaption>Box section cut to length.</figcaption></figure>
+          <figure class="shot"><img src="images/cnc-frame-parts.jpg" width="1200" height="675" loading="lazy" alt="Steel box-section rails, columns and a carriage plate laid out on the workbench."><figcaption>Frame parts before assembly.</figcaption></figure>
+          <figure class="shot"><img src="images/cnc-welding.jpg" width="1054" height="1400" loading="lazy" alt="A box-section corner joint ready for welding, with the welder and gas bottle behind."><figcaption>Welding a frame joint.</figcaption></figure>
+          <figure class="shot"><img src="images/cnc-bench-welded.jpg" width="1054" height="1400" loading="lazy" alt="The welded steel bench frame standing in the workshop."><figcaption>The welded bench.</figcaption></figure>
+          <figure class="shot"><img src="images/cnc-grinding.jpg" width="1052" height="1400" loading="lazy" alt="Will wearing a face shield, ear defenders and a respirator while grinding steel."><figcaption>Grinding, with the right protection.</figcaption></figure>
+          <figure class="shot"><img src="images/cnc-mount-plate.jpg" width="1054" height="1400" loading="lazy" alt="A steel mounting plate welded to the box-section frame."><figcaption>A mounting plate welded to the frame.</figcaption></figure>
+          <figure class="shot"><img src="images/cnc-tapping-wide.jpg" width="1200" height="447" loading="lazy" alt="Gloved hands turning a tap wrench to cut a thread in a steel plate."><figcaption>Tapping a thread in a mounting plate.</figcaption></figure>
+          <figure class="shot"><img src="images/cnc-rails-ballscrew.jpg" width="1054" height="1400" loading="lazy" alt="Profile linear rails and a ballscrew with bearing blocks laid along the steel frame."><figcaption>Linear rails and ballscrew on the frame.</figcaption></figure>
+          <figure class="shot"><img src="images/cnc-assembled.jpg" width="1054" height="1400" loading="lazy" alt="The CNC columns, bridge and table rails assembled on the bench."><figcaption>Columns, bridge and table together.</figcaption></figure>
+          <figure class="shot"><img src="images/cnc-columns-primed.jpg" width="1400" height="1054" loading="lazy" alt="Two box-section columns with welded gussets, primed grey."><figcaption>Columns primed, with welded gussets.</figcaption></figure>
+          <figure class="shot"><img src="images/cnc-bridge-primed.jpg" width="1400" height="1054" loading="lazy" alt="The primed steel bridge sitting on its columns above the table rails."><figcaption>The primed bridge on its columns.</figcaption></figure>
         </div>
-      </div>
+      </div></div>
     </article>
 
-    <article class="project">
+    <article class="project" id="mob">
       <div class="project-head">
         <div class="project-body">
           <h3>Man-overboard recovery system</h3>
           <p class="when">A-level Design Technology project, 2025 to 2026, grade A*</p>
-          <p>Most yacht safety kit only works if the person in the water can help themselves. My client, an experienced skipper with a 31&nbsp;ft Moody yacht in Cardiff Bay, wanted a way to recover someone who is unconscious or exhausted.</p>
-          <p>I designed a two-part system. A hook on a pole threads a rope through the casualty's lifejacket loop, so they are secured without having to grab anything. Then a weighted mesh sling is lowered under them and the main halyard and winch roll them up the side of the boat.</p>
-          <p>I iterated the threading mechanism through three laser-cut prototypes and used Fusion&nbsp;360 FEA to check the 3&nbsp;mm aluminium. A prototype later broke exactly where the simulation predicted. I made two versions of the hook: one I sand-cast myself from a 3D-printed pattern, and one CNC-machined with advice from Whitehouse Machine Tools on design for manufacture.</p>
-          <p>To test it, I jumped into Cardiff Bay in an auto-inflating lifejacket and played an unresponsive casualty. Setup took 2 minutes 30 seconds and I was lifted the 1.2&nbsp;m to deck level. The system is now kept aboard the yacht.</p>
+          <p>Most yacht safety kit only works if the person in the water can help themselves. My client, an experienced skipper with a 31&nbsp;ft yacht in Cardiff Bay, wanted a way to recover someone who is unconscious or exhausted. I designed, made and sea-tested a two-part system.</p>
+          <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-mob">More photos and detail <span class="count">(10)</span></button>
         </div>
-        <dl class="spec">
-          <div><dt>Tested</dt><dd>On the water: 2 min 30 s setup, 1.2 m lift, up to 70 kg</dd></div>
-          <div><dt>Processes</dt><dd>Laser cutting, FEA, sand casting, CNC machining, 3D printing, sewing</dd></div>
-          <div><dt>Materials</dt><dd>Aluminium, EPDM rubber, polyester mesh and webbing, ABS, TPU</dd></div>
-        </dl>
+        <figure class="shot lead"><img src="images/mob-sea-test.jpg" width="604" height="341" alt="Will in the water wearing a lifejacket, being lifted in the yellow mesh rescue sling beside the yacht."><figcaption>On-water test in Cardiff Bay.</figcaption></figure>
       </div>
-      <div class="media">
-        <div class="row" style="--cols: 1.771fr 2.613fr">
-          <figure class="shot"><img src="images/mob-sea-test.jpg" width="604" height="341" loading="lazy" alt="Will in the water wearing a lifejacket, being lifted in the yellow mesh rescue sling beside the yacht."><figcaption>On-water test in Cardiff Bay.</figcaption></figure>
-          <figure class="shot"><img src="images/mob-hook-versions.jpg" width="1087" height="416" loading="lazy" alt="Three versions of the hook and threader: a 3D-printed prototype, the CNC-machined aluminium version with orange spacers, and the sand-cast aluminium version."><figcaption>Prototype, CNC-machined and sand-cast hooks.</figcaption></figure>
+      <div class="more" id="more-mob"><div class="more-inner">
+        <div class="more-text">
+          <div>
+            <p>A hook on a pole threads a rope through the casualty's lifejacket loop, so they are secured without having to grab anything. Then a weighted mesh sling is lowered under them and the main halyard and winch roll them up the side of the boat.</p>
+            <p>I iterated the threading mechanism through three laser-cut prototypes and used Fusion&nbsp;360 FEA to check the 3&nbsp;mm aluminium. A prototype later broke exactly where the simulation predicted. I made two versions of the hook: one I sand-cast myself from a 3D-printed pattern, and one CNC-machined with advice from Whitehouse Machine Tools on design for manufacture.</p>
+            <p>To test it, I jumped into Cardiff Bay in an auto-inflating lifejacket and played an unresponsive casualty. Setup took 2 minutes 30 seconds and I was lifted the 1.2&nbsp;m to deck level. The system is now kept aboard the yacht.</p>
+          </div>
+          <dl class="spec">
+            <div><dt>Tested</dt><dd>On the water: 2 min 30 s setup, 1.2 m lift, up to 70 kg</dd></div>
+            <div><dt>Processes</dt><dd>Laser cutting, FEA, sand casting, CNC machining, 3D printing, sewing</dd></div>
+            <div><dt>Materials</dt><dd>Aluminium, EPDM rubber, polyester mesh and webbing, ABS, TPU</dd></div>
+          </dl>
         </div>
-      </div>
+        <div class="thumbs">
+          <figure class="shot wide"><img src="images/mob-hook-versions.jpg" width="1087" height="416" loading="lazy" alt="Three versions of the hook and threader: a 3D-printed prototype, the CNC-machined version and the sand-cast version."><figcaption>Prototype, CNC-machined and sand-cast hooks.</figcaption></figure>
+          <figure class="shot"><img src="images/mob-render-hook.jpg" width="1400" height="788" loading="lazy" alt="Render of the two hook designs on poles above the water."><figcaption>Final design renders.</figcaption></figure>
+          <figure class="shot"><img src="images/mob-render-casualty.jpg" width="1400" height="788" loading="lazy" alt="Render of the hook threading a rope through the lifting loop of a casualty's lifejacket."><figcaption>How the hook threads the lifejacket loop.</figcaption></figure>
+          <figure class="shot"><img src="images/mob-sand-cast-hook.jpg" width="1054" height="1400" loading="lazy" alt="The sand-cast aluminium hook lying in the opened sand mould."><figcaption>The sand-cast hook, fresh from the mould.</figcaption></figure>
+          <figure class="shot"><img src="images/mob-cnc-hook-pole.jpg" width="1400" height="1054" loading="lazy" alt="The CNC-machined aluminium hook fitted to its pole with orange spacers."><figcaption>CNC-machined hook on its pole.</figcaption></figure>
+          <figure class="shot"><img src="images/mob-cnc-hook.jpg" width="1400" height="1054" loading="lazy" alt="Side view of the CNC-machined aluminium hook."><figcaption>The machined hook from the side.</figcaption></figure>
+          <figure class="shot"><img src="images/mob-sewing-sling.jpg" width="1054" height="1400" loading="lazy" alt="Will sewing the fluorescent yellow mesh sling on a sewing machine."><figcaption>Sewing the rescue sling.</figcaption></figure>
+          <figure class="shot"><img src="images/mob-sling-flat.jpg" width="1400" height="1054" loading="lazy" alt="The yellow mesh rescue sling laid flat on decking."><figcaption>The finished sling laid out.</figcaption></figure>
+          <figure class="shot"><img src="images/mob-sling-folded.jpg" width="1400" height="1054" loading="lazy" alt="The rescue sling folded with its ropes and toggles."><figcaption>Folded for storage on board.</figcaption></figure>
+          <figure class="shot"><img src="images/mob-land-test.jpg" width="1054" height="1400" loading="lazy" alt="A lifejacket on grass with the hook and rope threaded through its loop during a land test."><figcaption>Land test with a weighted lifejacket.</figcaption></figure>
+        </div>
+      </div></div>
     </article>
 
-    <article class="project">
+    <article class="project" id="icu">
       <div class="project-head">
         <div class="project-body">
           <h3>Worcester Royal Hospital ICU virtual tour</h3>
           <p class="when">Two-year project, Bronze Duke of Edinburgh volunteering</p>
-          <p>A photorealistic, interactive 3D tour of the intensive care unit, built in Blender to help patients, families and new staff know what to expect. I modelled and textured around 30 pieces of medical equipment. The tour is still live on the Worcester ICU website, and I have sold some of the equipment models online.</p>
+          <p>A photorealistic, interactive 3D tour of the intensive care unit, built in Blender to help patients, families and new staff know what to expect. It is still live on the Worcester ICU website.</p>
           <p class="ctas"><a class="cta" href="https://worcestericu.wixsite.com/intensivecare" target="_blank" rel="noopener">View the 360° virtual tour</a> <a class="cta" href="https://youtu.be/pZTfGwRE9_4" target="_blank" rel="noopener">Watch a video of the CAD work</a></p>
+          <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-icu">More photos and detail <span class="count">(8)</span></button>
         </div>
-        <dl class="spec">
-          <div><dt>Software</dt><dd>Blender</dd></div>
-          <div><dt>Users</dt><dd>Patients, carers and staff</dd></div>
-          <div><dt>Models</dt><dd>Around 30 pieces of equipment, some sold online</dd></div>
-        </dl>
-      </div>
-      <div class="media">
-        <figure class="clip wide-clip">
+        <figure class="clip lead">
           <video class="loop" src="videos/icu-wireframe-to-render.mp4" poster="videos/icu-wireframe-to-render.jpg" width="1280" height="720" autoplay muted loop playsinline preload="metadata" aria-label="Animation of the ICU scene changing from a Blender wireframe to the finished photorealistic render."></video>
           <figcaption>The ward in Blender: from wireframe to finished render.</figcaption>
         </figure>
-        <div class="row" style="--cols: 1.778fr 1.778fr 1.887fr">
-          <figure class="shot"><img src="images/icu-tour-ward.jpg" width="1200" height="675" loading="lazy" alt="Photorealistic Blender render of the Worcester Royal Hospital intensive care unit, showing bed bays and nurses' station."><figcaption>Render from the finished tour.</figcaption></figure>
-          <figure class="shot"><img src="images/icu-ventilator-model.jpg" width="1200" height="675" loading="lazy" alt="3D model of an ICU ventilator."><figcaption>One of around 30 equipment models.</figcaption></figure>
-          <figure class="shot"><img src="images/icu-blender-workspace.jpg" width="1200" height="636" loading="lazy" alt="The ICU scene open in Blender's editor."><figcaption>Building the scene in Blender.</figcaption></figure>
-        </div>
       </div>
+      <div class="more" id="more-icu"><div class="more-inner">
+        <div class="more-text">
+          <div>
+            <p>I modelled and textured around 30 pieces of medical equipment, from beds and ventilators to monitor trolleys and sinks. I have also sold some of the equipment models online.</p>
+          </div>
+          <dl class="spec">
+            <div><dt>Software</dt><dd>Blender</dd></div>
+            <div><dt>Users</dt><dd>Patients, carers and staff</dd></div>
+            <div><dt>Models</dt><dd>Around 30 pieces of equipment, some sold online</dd></div>
+          </dl>
+        </div>
+        <div class="thumbs">
+          <figure class="clip wide"><video src="videos/icu-flythrough.mp4" poster="videos/icu-flythrough.jpg" width="1280" height="706" controls muted playsinline preload="none" aria-label="Screen recording of a camera flying through the ICU model in Blender."></video><figcaption>Flying through the ward in Blender, 1 min 17 s.</figcaption></figure>
+          <figure class="shot"><img src="images/icu-tour-ward.jpg" width="1200" height="675" loading="lazy" alt="Photorealistic render of the intensive care unit, showing bed bays and nurses' station."><figcaption>Render from the finished tour.</figcaption></figure>
+          <figure class="shot"><img src="images/icu-blender-workspace.jpg" width="1200" height="636" loading="lazy" alt="The ICU scene open in Blender's editor."><figcaption>Building the scene in Blender.</figcaption></figure>
+          <figure class="shot"><img src="images/icu-bed-wireframe.jpg" width="1400" height="788" loading="lazy" alt="Wireframe of a hospital bed model."><figcaption>ICU bed: wireframe.</figcaption></figure>
+          <figure class="shot"><img src="images/icu-bed-model.jpg" width="1400" height="788" loading="lazy" alt="Rendered hospital bed model with blue mattress and side rails."><figcaption>ICU bed: finished model.</figcaption></figure>
+          <figure class="shot"><img src="images/icu-ventilator-wireframe.jpg" width="1400" height="788" loading="lazy" alt="Wireframe of a ventilator on its wheeled trolley."><figcaption>Ventilator: wireframe.</figcaption></figure>
+          <figure class="shot"><img src="images/icu-ventilator-model.jpg" width="1200" height="675" loading="lazy" alt="Rendered ventilator model."><figcaption>Ventilator: finished model.</figcaption></figure>
+          <figure class="shot"><img src="images/icu-sink-model.jpg" width="1400" height="788" loading="lazy" alt="Rendered clinical hand-wash sink with soap dispenser and signage."><figcaption>Clinical sink assembly.</figcaption></figure>
+        </div>
+      </div></div>
     </article>
 
-    <article class="project">
+    <article class="project" id="rocket">
+      <div class="project-head">
+        <div class="project-body">
+          <h3>Model rocket, RGS Worcester rocket club</h3>
+          <p class="when">Team project, 2025: UK Rocketry Challenge (UKROC), sponsored by Airbus</p>
+          <p>Our school team designed and built a rocket for the UKROC regional competition, where the rocket has to carry an egg and bring it back undamaged. I designed and 3D printed the nose cone and helped run the launches.</p>
+          <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-rocket">More photos and detail <span class="count">(10)</span></button>
+        </div>
+        <figure class="clip lead tall"><video src="videos/rocket-launch.mp4" poster="videos/rocket-launch.jpg" width="720" height="1280" controls playsinline preload="none" aria-label="Video of the team's rocket launching from a field into a clear blue sky."></video><figcaption>Launch day, March 2025.</figcaption></figure>
+      </div>
+      <div class="more" id="more-rocket"><div class="more-inner">
+        <div class="more-text">
+          <div>
+            <p>The rocket combined 3D-printed parts with laser-cut plywood rings holding the motor tubes. A flight computer deployed the parachute and logged height, speed and time to apogee.</p>
+            <p>On our first test flight the rocket veered sideways. The team enlarged the fins to make it more stable, and our competition launch was a success.</p>
+          </div>
+          <dl class="spec">
+            <div><dt>My role</dt><dd>Nose cone design and 3D printing; launch</dd></div>
+            <div><dt>Competition</dt><dd>UKROC regional round, 2025</dd></div>
+            <div><dt>Skills</dt><dd>CAD, 3D printing, teamwork, testing and iteration</dd></div>
+          </dl>
+        </div>
+        <div class="thumbs">
+          <figure class="shot"><img src="images/rocket-nose-cones.jpg" width="1054" height="1400" loading="lazy" alt="Two finished grey 3D-printed nose cones with red bands, fitted to cardboard body tubes."><figcaption>Finished nose cones on their body tubes.</figcaption></figure>
+          <figure class="shot"><img src="images/rocket-nose-cones-test.jpg" width="1054" height="1400" loading="lazy" alt="Two grey 3D-printed nose cones of different lengths standing on a table."><figcaption>Testing two nose cone designs.</figcaption></figure>
+          <figure class="shot"><img src="images/rocket-body-section.jpg" width="1054" height="1400" loading="lazy" alt="A grey 3D-printed rocket body section held in a hand."><figcaption>A printed body section.</figcaption></figure>
+          <figure class="shot"><img src="images/rocket-printed-coupler.jpg" width="1054" height="1400" loading="lazy" alt="A grey and red 3D-printed coupler standing on a table."><figcaption>A two-colour printed coupler.</figcaption></figure>
+          <figure class="shot"><img src="images/rocket-parachute-bay.jpg" width="1054" height="1400" loading="lazy" alt="Looking into the printed parachute bay, with the shock cord coiled inside."><figcaption>The parachute bay and shock cord.</figcaption></figure>
+          <figure class="shot"><img src="images/rocket-motor-mount.jpg" width="1054" height="1400" loading="lazy" alt="Laser-cut plywood rings holding three motor tubes, with fins beside them."><figcaption>Motor mount: laser-cut rings and fins.</figcaption></figure>
+          <figure class="shot"><img src="images/rocket-motor-mount-loaded.jpg" width="1054" height="1400" loading="lazy" alt="The motor mount with three motors fitted."><figcaption>The motor mount with motors fitted.</figcaption></figure>
+          <figure class="shot"><img src="images/rocket-flight-computer.jpg" width="1054" height="1400" loading="lazy" alt="A small flight computer with a screen showing height, speed and apogee readings."><figcaption>The flight computer showing flight data.</figcaption></figure>
+          <figure class="shot"><img src="images/rocket-recovered.jpg" width="1054" height="1400" loading="lazy" alt="The recovered rocket section with scorched wadding after a flight."><figcaption>Recovered after a flight.</figcaption></figure>
+          <figure class="shot"><img src="images/rocket-ukroc.jpg" width="1400" height="1054" loading="lazy" alt="UKROC competition card reading RGS RC, sponsored by Airbus."><figcaption>Our UKROC team card.</figcaption></figure>
+        </div>
+      </div></div>
+    </article>
+
+    <article class="project" id="router">
       <div class="project-head">
         <div class="project-body">
           <h3>First CNC router</h3>
-          <p class="when">Funded by my Arkwright Scholarship</p>
-          <p>Built from an online design, covering mechanical assembly, electronics and machine setup. I used it to make wooden wallets and engraved house signs. Its limits on metal shaped every decision on my second machine.</p>
+          <p class="when">2024 to 2025, funded by my Arkwright Scholarship</p>
+          <p>A V1 Engineering LowRider 2, built from an online design. I assembled the mechanics, wired the motors, set up Fusion 360 CAM and a G-code sender, and used it to make engraved signs and wooden wallets.</p>
+          <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-router">More photos and detail <span class="count">(8)</span></button>
         </div>
+        <figure class="shot lead"><img src="images/router-will.jpg" width="1200" height="675" alt="Will at the first CNC router, a steel-tube machine with green 3D-printed parts and a trim router, with dust extraction attached."><figcaption>Running the first machine.</figcaption></figure>
       </div>
-      <div class="media">
-        <div class="row" style="--cols: 1fr 1fr">
-          <figure class="shot"><img src="images/router-will.jpg" width="1200" height="675" loading="lazy" alt="Will at the first CNC router, a steel-tube machine with green 3D-printed parts and a trim router, with dust extraction attached."><figcaption>Running the first machine.</figcaption></figure>
-          <figure class="shot"><img src="images/router-cutting.jpg" width="1200" height="675" loading="lazy" alt="Close-up of the router carving a design into a wooden board."><figcaption>Carving wood: good. Metal: not stiff enough.</figcaption></figure>
+      <div class="more" id="more-router"><div class="more-inner">
+        <div class="more-text">
+          <div>
+            <p>It cut wood well, but metal showed its limits: backlash in the belts, printed parts that flexed, and a heavy router overloading the Z axis. Adhesive workholding also failed on metal. Each of these shaped a decision on my second machine.</p>
+          </div>
         </div>
-      </div>
+        <div class="thumbs">
+          <figure class="clip wide"><video src="videos/router-running.mp4" poster="videos/router-running.jpg" width="1280" height="720" controls muted playsinline preload="none" aria-label="Video of the first CNC router moving across a sheet on the table following a toolpath."></video><figcaption>Running a toolpath.</figcaption></figure>
+          <figure class="shot"><img src="images/router-early-build.jpg" width="1400" height="1050" loading="lazy" alt="The first CNC router partly built on a wooden table."><figcaption>Early in the build, August 2024.</figcaption></figure>
+          <figure class="shot"><img src="images/router-cutting.jpg" width="1200" height="675" loading="lazy" alt="Close-up of the router carving a design into a wooden board."><figcaption>Carving wood.</figcaption></figure>
+          <figure class="shot"><img src="images/router-signs.jpg" width="1400" height="788" loading="lazy" alt="Two dark wooden house signs with carved lettering and a leaf design."><figcaption>Engraved house signs.</figcaption></figure>
+          <figure class="shot"><img src="images/router-dog-sign.jpg" width="1400" height="788" loading="lazy" alt="A carved wooden sign with a dog's name and a paw print."><figcaption>A carved name sign.</figcaption></figure>
+          <figure class="shot"><img src="images/router-fretwork.jpg" width="1400" height="1054" loading="lazy" alt="A geometric lattice pattern cut into plywood."><figcaption>Fretwork cut in plywood.</figcaption></figure>
+          <figure class="shot"><img src="images/router-plywood-part.jpg" width="788" height="1400" loading="lazy" alt="A plywood part cut on the router, with threaded rods fitted."><figcaption>A plywood part cut on the router.</figcaption></figure>
+          <figure class="shot"><img src="images/router-aluminium-test.jpg" width="1054" height="1400" loading="lazy" alt="An aluminium plate with a rough, chattered pocket cut into it."><figcaption>Trying aluminium: chatter showed the machine wasn't stiff enough.</figcaption></figure>
+        </div>
+      </div></div>
     </article>
 
-    <article class="project">
+    <article class="project" id="can-crusher">
+      <div class="project-head">
+        <div class="project-body">
+          <h3>Can crusher</h3>
+          <p class="when">GCSE Design Technology, 2024</p>
+          <p>A wall-mounted can crusher. I made a card model to test the lever, animated the mechanism in Blender, then built it in the school workshop with a 3D-printed handle grip.</p>
+          <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-crusher">More photos and detail <span class="count">(5)</span></button>
+        </div>
+        <figure class="shot lead"><img src="images/can-crusher.jpg" width="1400" height="1050" alt="The finished can crusher with a metal lever and a white 3D-printed lattice handle grip."><figcaption>The finished can crusher.</figcaption></figure>
+      </div>
+      <div class="more" id="more-crusher"><div class="more-inner">
+        <div class="thumbs">
+          <figure class="clip wide"><video src="videos/can-crusher-mechanism.mp4" poster="videos/can-crusher-mechanism.jpg" width="1280" height="720" controls muted loop playsinline preload="none" aria-label="Blender animation of the wall-mounted can crusher pressing a can flat."></video><figcaption>The mechanism animated in Blender.</figcaption></figure>
+          <figure class="shot"><img src="images/can-crusher-card-model.jpg" width="1400" height="1050" loading="lazy" alt="A card model of the can crusher lever with a can in place."><figcaption>Card model to test the lever.</figcaption></figure>
+          <figure class="shot"><img src="images/can-crusher-open.jpg" width="1050" height="1400" loading="lazy" alt="The can crusher housing with its base flap open."><figcaption>Housing with the base flap open.</figcaption></figure>
+          <figure class="shot"><img src="images/can-crusher-measured.jpg" width="1050" height="1400" loading="lazy" alt="The can crusher on a bench with a steel rule held beside it."><figcaption>Checking dimensions.</figcaption></figure>
+          <figure class="clip"><video src="videos/can-crusher-lever.mp4" poster="videos/can-crusher-lever.jpg" width="720" height="720" controls muted loop playsinline preload="none" aria-label="Short Blender animation of the can crusher lever moving."></video><figcaption>Lever animation.</figcaption></figure>
+        </div>
+      </div></div>
+    </article>
+
+    <article class="project" id="mask">
       <div class="project-head">
         <div class="project-body">
           <h3>Automatic face mask</h3>
           <p class="when">Fusion 360, 3D printing, Arduino</p>
           <p>A 3D-printed mask that opens and closes at the press of a button, driven by a servo. It was how I learned Arduino wiring and code.</p>
+          <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-mask">More photos and detail <span class="count">(1)</span></button>
         </div>
+        <figure class="shot lead"><img src="images/mask-fusion360.jpg" width="1200" height="636" alt="Fusion 360 model of the automatic face mask fitted to a scanned face."><figcaption>Designed in Fusion 360 around a face scan.</figcaption></figure>
       </div>
-      <div class="media">
-        <div class="row" style="--cols: 1.887fr .475fr">
-          <figure class="shot"><img src="images/mask-fusion360.jpg" width="1200" height="636" loading="lazy" alt="Fusion 360 model of the automatic face mask fitted to a scanned face."><figcaption>Designed in Fusion 360 around a face scan.</figcaption></figure>
+      <div class="more" id="more-mask"><div class="more-inner">
+        <div class="thumbs">
           <figure class="clip"><video src="videos/automatic-mask.mp4" poster="videos/automatic-mask.jpg" width="304" height="640" controls playsinline preload="none" aria-label="Video of Will wearing the mask as it opens and closes."></video><figcaption>The finished mask working.</figcaption></figure>
         </div>
-      </div>
+      </div></div>
     </article>
 
-    <article class="project">
+    <article class="project" id="water-sensor">
       <div class="project-head">
         <div class="project-body">
           <h3>Water-level sensor</h3>
           <p class="when">Microcontroller, Python</p>
           <p>An ultrasonic sensor reads the water level in our coffee machine and shows it on a small OLED screen, with warnings for empty and overfilled.</p>
+          <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-water">More photos and detail <span class="count">(1)</span></button>
         </div>
+        <figure class="shot lead"><img src="images/water-sensor-breadboard.jpg" width="1200" height="900" alt="Breadboard with an ultrasonic sensor, microcontroller and OLED screen showing a distance reading."><figcaption>The working prototype.</figcaption></figure>
       </div>
-      <div class="media">
-        <div class="row" style="--cols: 1.333fr .725fr">
-          <figure class="shot"><img src="images/water-sensor-breadboard.jpg" width="1200" height="900" loading="lazy" alt="Breadboard with an ultrasonic sensor, microcontroller and OLED screen showing a distance reading."><figcaption>The working prototype.</figcaption></figure>
+      <div class="more" id="more-water"><div class="more-inner">
+        <div class="thumbs">
           <figure class="shot"><img src="images/water-sensor-wiring.jpg" width="750" height="1035" loading="lazy" alt="Wiring diagram for the ultrasonic sensor and OLED display."><figcaption>My wiring diagram.</figcaption></figure>
         </div>
-      </div>
+      </div></div>
     </article>
 
     <div class="smaller">
@@ -207,9 +320,7 @@
       <figure class="clip"><video src="videos/dt-lamp-cad.mp4" poster="videos/dt-lamp-cad.jpg" width="1280" height="720" controls playsinline preload="none" aria-label="The Year 9 DT lamp in Fusion 360, followed by its technical drawing."></video><figcaption><strong>Year 9 DT lamp.</strong> The Fusion 360 model and its technical drawing.</figcaption></figure>
       <figure class="clip"><video src="videos/plotter-conversion-cad.mp4" poster="videos/plotter-conversion-cad.jpg" width="1086" height="730" controls playsinline preload="none" aria-label="Fusion 360 recording of parts designed to convert a 3D printer into a pen plotter."></video><figcaption><strong>3D printer to plotter conversion.</strong> Fusion 360 recording, 53 s.</figcaption></figure>
       <figure class="clip"><video src="videos/pump-gearbox-cad.mp4" poster="videos/pump-gearbox-cad.jpg" width="1104" height="782" controls playsinline preload="none" aria-label="Fusion 360 recording of a pump and gearbox assembly with green bevel gears."></video><figcaption><strong>Pump and gearbox.</strong> Fusion 360 recording, 2 min 4 s.</figcaption></figure>
-      <figure class="clip"><video src="videos/can-crusher-mechanism.mp4" poster="videos/can-crusher-mechanism.jpg" width="1280" height="720" controls muted loop playsinline preload="none" aria-label="Blender animation of a wall-mounted can crusher pressing a can flat."></video><figcaption><strong>GCSE DT can crusher.</strong> Mechanism animated in Blender.</figcaption></figure>
-      <figure class="clip"><video src="videos/can-crusher-lever.mp4" poster="videos/can-crusher-lever.jpg" width="720" height="720" controls muted loop playsinline preload="none" aria-label="Short Blender animation of the can crusher lever moving."></video><figcaption><strong>Can crusher lever.</strong> Blender animation.</figcaption></figure>
-      <figure class="clip"><video src="videos/trebuchet.mp4" poster="videos/trebuchet.jpg" width="848" height="480" controls playsinline preload="none" aria-label="A wooden floating-arm trebuchet being fired in a garden."></video><figcaption><strong>Floating-arm trebuchet.</strong> Firing test.</figcaption></figure>
+      <figure class="clip"><video src="videos/trebuchet.mp4" poster="videos/trebuchet.jpg" width="848" height="480" controls playsinline preload="none" aria-label="A wooden floating-arm trebuchet being fired in a garden."></video><figcaption><strong>Floating-arm trebuchet.</strong> Firing test. A trebuchet I built won the school History department competition in 2019 with a 43.7&nbsp;m throw.</figcaption></figure>
       <figure class="clip"><video src="videos/handheld-catapult.mp4" poster="videos/handheld-catapult.jpg" width="848" height="656" controls playsinline preload="none" aria-label="An orange handheld catapult being fired."></video><figcaption><strong>Handheld catapult.</strong> Firing test.</figcaption></figure>
     </div>
   </section>
@@ -258,12 +369,16 @@
     </div>
 
     <h3 class="sub">Teams and clubs</h3>
+    <div class="clubs">
     <ul class="plain">
-      <li><strong>Rocket club, RGS Worcester:</strong> our team entered the UK Youth Rocketry Challenge, where the rocket has to carry an egg and bring it back undamaged. I designed and 3D printed the nose cone and helped run the launch; the team used Arduino electronics to deploy the parachute and record altitude.</li>
+      <li><strong>Rocket club, RGS Worcester:</strong> our team built a rocket for the UKROC competition. I designed and printed the nose cone; see <a href="#rocket">the rocket project</a>.</li>
       <li><strong>Car restoration club:</strong> part of a team restoring an old Citro&euml;n with help from industry, including acid dipping. I visited the Morgan Motor Company factory in Malvern several times to learn how they build their cars, and Morgan brought professional expertise to our project.</li>
-      <li><strong>Assistant sailing instructor</strong>, Draycote Water Sailing Club (2023 to 2024), and <strong>CCF, RAF section</strong>.</li>
+      <li><strong>Sailing:</strong> assistant instructor at Draycote Water Sailing Club (2023 to 2024), running taster sessions on my own. RYA Level 3 and Powerboat Level 1. I have raced Feva and Optimist dinghies at national and international level.</li>
+      <li><strong>CCF:</strong> four years in the RAF and Army sections, reaching Corporal, including flying at RAF Cosford.</li>
       <li><strong>Outside school:</strong> most of my spare time goes on CAD, Blender and 3D printing, and I'm building up my metalwork skills for the CNC mill. With a friend, I practise welding and am rebuilding an old car. I also enjoy rock climbing.</li>
     </ul>
+    <figure class="shot"><img src="images/sailing-racing.jpg" width="1400" height="790" loading="lazy" alt="Will racing a dinghy with a yellow sail, spray flying, next to a red racing mark."><figcaption>Dinghy racing.</figcaption></figure>
+    </div>
 
     <h3 class="sub">Education and awards</h3>
     <ul class="plain">
@@ -271,6 +386,7 @@
       <li><strong>GCSEs, Solihull School:</strong> eight grade 9s including Maths, Physics, Chemistry and Design Technology.</li>
       <li><strong>Arkwright Engineering Scholarship</strong> (2025), sponsored by Safran.</li>
       <li><strong>Duke of Edinburgh Bronze Award.</strong></li>
+      <li><strong>First place, History department trebuchet competition</strong>, Solihull School (2019): a 43.7&nbsp;m throw.</li>
     </ul>
   </section>
 
@@ -293,26 +409,69 @@
 </dialog>
 
 <script>
-// Click a picture to see it full size
+// Click a picture to see it full size (works for pictures inside the "more" panels too)
 (function () {
   var dlg = document.querySelector('.lightbox');
   if (!dlg || !dlg.showModal) return;
   var big = dlg.querySelector('img'), cap = dlg.querySelector('.lb-cap');
-  document.querySelectorAll('.shot img, .sheet img').forEach(function (img) {
-    img.tabIndex = 0;
-    img.setAttribute('role', 'button');
-    function open() {
-      big.src = img.currentSrc || img.src;
-      big.alt = img.alt;
-      var fc = img.closest('figure').querySelector('figcaption');
-      cap.textContent = fc ? fc.textContent : '';
-      dlg.showModal();
-    }
-    img.addEventListener('click', open);
-    img.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+  var sel = '.shot img, .sheet img';
+  document.querySelectorAll(sel).forEach(function (img) { img.tabIndex = 0; img.setAttribute('role', 'button'); img.classList.add('zoom'); });
+  function open(img) {
+    big.src = img.currentSrc || img.src;
+    big.alt = img.alt;
+    var fc = img.closest('figure').querySelector('figcaption');
+    cap.textContent = fc ? fc.textContent : '';
+    dlg.showModal();
+  }
+  document.addEventListener('click', function (e) { var img = e.target.closest && e.target.closest(sel); if (img) open(img); });
+  document.addEventListener('keydown', function (e) {
+    var img = e.target.closest && e.target.closest(sel);
+    if (img && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); open(img); }
   });
   dlg.addEventListener('click', function (e) { if (e.target !== big) dlg.close(); });
 })();
+
+// More photos and detail: open with the button, or by resting the pointer
+// on a project for about a second (pointer devices only). Scrolling cancels
+// the wait, so panels don't pop open while someone is just scrolling past.
+(function () {
+  var WAIT = 1100;
+  var canHover = window.matchMedia && matchMedia('(hover: hover) and (pointer: fine)').matches;
+  var scrolling = false, scrollTimer;
+  var projects = [].slice.call(document.querySelectorAll('.project'));
+  projects.forEach(function (p) {
+    var btn = p.querySelector('.more-btn'), more = p.querySelector('.more');
+    if (!btn || !more) return;
+    var label = btn.firstChild.nodeValue, timer = null;
+    more.inert = true;
+    function set(open) {
+      p.classList.toggle('open', open);
+      p.classList.remove('arming');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.firstChild.nodeValue = open ? 'Hide extra photos and detail ' : label;
+      more.inert = !open;
+      if (!open) more.querySelectorAll('video').forEach(function (v) { v.pause(); });
+    }
+    function cancel() { clearTimeout(timer); timer = null; p.classList.remove('arming'); }
+    p._cancel = cancel;
+    btn.addEventListener('click', function () { cancel(); set(!p.classList.contains('open')); });
+    if (!canHover) return;
+    p.style.setProperty('--hover-wait', WAIT + 'ms');
+    p.addEventListener('mousemove', function () {
+      if (timer || scrolling || p.classList.contains('open')) return;
+      p.classList.add('arming');
+      timer = setTimeout(function () { timer = null; set(true); }, WAIT);
+    });
+    p.addEventListener('mouseleave', cancel);
+  });
+  window.addEventListener('scroll', function () {
+    scrolling = true;
+    projects.forEach(function (p) { if (p._cancel) p._cancel(); });
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(function () { scrolling = false; }, 250);
+  }, { passive: true });
+})();
+
 // Respect "reduce motion": don't autoplay the looping clip
 if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
   document.querySelectorAll('video.loop').forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); v.controls = true; });
